@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+
+        margin-right: 40px;
+      }
+      .message {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 25px;
+        width: fit-content;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+      }
+      .message.sent {
+        background-color: rgba(7, 7, 224, 0.57);
+        align-self: flex-end;
+      }
+      .message.receive {
+        background-color: whitesmoke;
+        align-self: self-start;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="message sent">Hi</li>
+      <li class="message receive">Hi</li>
+      <li class="message sent">How are you?</li>
+      <li class="message receive">Good. You?</li>
+      <li class="message sent">Fine. Where are you?</li>
+      <li class="message receive">Dhaka.</li>
+    </ul>
+  </body>
+</html>
